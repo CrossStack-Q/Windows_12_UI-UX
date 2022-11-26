@@ -30,7 +30,6 @@ const people = [
     { id: 2, name: 'Arlene Mccoy' },
     { id: 3, name: 'Devon Webb' },
     { id: 4, name: 'Tom Cook' },
-    { id: 5, name: 'Tanya Fox' },
   ]
   
 
