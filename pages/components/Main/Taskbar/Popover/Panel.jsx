@@ -4,6 +4,7 @@ import {
   User,
   Button,
   Progress,
+  Avatar,
   Grid,
   Input,
 } from "@nextui-org/react";
@@ -55,7 +56,7 @@ function Panel() {
           display: "flex",
           flexDirection: "column",
           maxWidth: "30vw",
-          height: "48vh",
+          height: "49vh",
           outline: "none",
           padding: "$6",
           overflow: "hidden",
@@ -143,10 +144,10 @@ function Panel() {
             </div>
           </div>
         </div>
-        <div className="m-2">
+        <div className="m-2 p-2 bg-white bg-opacity-5 rounded-md">
           <Progress color="primary" size="xl" value={78} />
         </div>
-        <div className="m-2">
+        <div className="m-2 p-2 bg-white bg-opacity-5 rounded-md">
           <Progress color="primary" size="xl" value={78} />
         </div>
         <div className="flex">
@@ -199,8 +200,44 @@ function Panel() {
             </div>
           </div>
         </div>
-        <div className="bg-red-400 flex flex-col flex-1 m-1 flex-grow">
-          Now
+        <div className="text-white bg-white bg-opacity-5 rounded-lg flex m-1 p-2 gap-2 items-center">
+          <Avatar
+            src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+            size="lg"
+          />
+          <div className="flex flex-col mx-2">
+            <span>Name of song</span>
+            <span>Singer name</span>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6 ml-4"
+          >
+            <path d="M9.195 18.44c1.25.713 2.805-.19 2.805-1.629v-2.34l6.945 3.968c1.25.714 2.805-.188 2.805-1.628V8.688c0-1.44-1.555-2.342-2.805-1.628L12 11.03v-2.34c0-1.44-1.555-2.343-2.805-1.629l-7.108 4.062c-1.26.72-1.26 2.536 0 3.256l7.108 4.061z" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path d="M5.055 7.06c-1.25-.714-2.805.189-2.805 1.628v8.123c0 1.44 1.555 2.342 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.342 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256L14.805 7.06C13.555 6.346 12 7.25 12 8.688v2.34L5.055 7.06z" />
+          </svg>
         </div>
       </Popover.Content>
     </Popover>
