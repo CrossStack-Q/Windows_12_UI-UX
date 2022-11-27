@@ -4,11 +4,8 @@ import Image from "next/image";
 import windows from "../public/windows.png";
 import { signIn, signOut, useSession } from "next-auth/react";
 import terminal from "../public/terminal.png";
-import Main from "./components/Main"
-import word from "../public/word.png";
-import excel from "../public/excel.png";
-import point from "../public/point.png";
-import note from "../public/note.png"
+import Main from "./components/Main/Main"
+
 
 const Home: NextPage = () => {
   const { data: session } = useSession();
