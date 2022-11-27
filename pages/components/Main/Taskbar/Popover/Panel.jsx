@@ -1,5 +1,12 @@
 import React from "react";
-import { Popover, User, Button, Grid, Input } from "@nextui-org/react";
+import {
+  Popover,
+  User,
+  Button,
+  Progress,
+  Grid,
+  Input,
+} from "@nextui-org/react";
 import { useAppContext } from "../../../../../context/state";
 import Image from "next/image";
 import excel from "../../../../../public/excel.png";
@@ -48,17 +55,14 @@ function Panel() {
           display: "flex",
           flexDirection: "column",
           maxWidth: "30vw",
-          height: "46vh",
+          height: "48vh",
           outline: "none",
           padding: "$6",
           overflow: "hidden",
         }}
       >
-        <button className="text-white">
-          HelloHelloHelloHelloHelloHelloHelloHelloHello
-        </button>
         <div className="flex">
-          <div className="flex-[0.5] ">
+          <div className="flex-[0.5] bg-white rounded-lg bg-opacity-5 flex flex-col items-center">
             <div className="flex flex-col justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +70,7 @@ function Panel() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-32 h-32 text-white m-1"
+                className="w-28 h-28 text-white m-1"
               >
                 <path
                   stroke-linecap="round"
@@ -76,34 +80,128 @@ function Panel() {
               </svg>
               <p className="absolute text-white">63%</p>
             </div>
-            <p className="text-white">A Man Laptop</p>
-            <p>Available Time:4 hours</p>
+            <p className="text-white -mt-4">A Man Laptop</p>
+            <p className="text-sm font-semibold text-gray-200">
+              Available Time:4 hours
+            </p>
           </div>
-          <div className="flex flex-col flex-[0.5] ">
-            <div>
-              {/* wifi */}
-              <div>
-                <p>Wi-Fi</p>
-                <p>A Man Wifi</p>
+          <div className="flex flex-col flex-[0.5]">
+            <div className="flex items-center p-1 m-1 bg-opacity-5 bg-white rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 m-2 rounded-full text-white bg-blue-400 p-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                />
+              </svg>
+
+              <div className="m-1">
+                <p className="text-white font-semibold">Wi-Fi</p>
+                <p className="text-gray-300">Man</p>
               </div>
             </div>
-            <div>
-              {/* okay */}
-              <div>
-                <p>Bluetooth</p>
-                <p>On</p>
+            <div className="flex items-center justify-between p-2 m-1 bg-white bg-opacity-5 rounded-lg">
+              <div className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8 m-2 rounded-full text-white bg-blue-400 p-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                  />
+                </svg>
+                <div>
+                  <p className="text-white font-semibold">Bluetooth</p>
+                  <p className="text-gray-300">On</p>
+                </div>
               </div>
-              {/* arroe */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6 text-white m-2"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
             </div>
           </div>
         </div>
-        <div>Brightness</div>
-        <div>Sound</div>
-        <div className="bg-rose-500 flex">
-          <div className="bg-green-500 flex-[0.5]">Aeroplane mode</div>
-          <div className="bg-yellow-500 flex-[0.5]">Dark Mode</div>
+        <div className="m-2">
+          <Progress color="primary" size="xl" value={78} />
         </div>
-        <div>Music</div>
+        <div className="m-2">
+          <Progress color="primary" size="xl" value={78} />
+        </div>
+        <div className="flex">
+          <div className="flex-[0.5]">
+            <div className="flex items-center p-1 m-1 bg-opacity-5 bg-white rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 m-2 rounded-full text-white bg-blue-400 p-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                />
+              </svg>
+
+              <div className="m-2">
+                <p className="text-white font-semibold">Wi-Fi</p>
+                <p className="text-gray-300">Man</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-[0.5]">
+            <div className="flex-[0.5]">
+              <div className="flex items-center p-1 m-1 bg-opacity-5 bg-white rounded-lg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8 m-2 rounded-full text-white bg-blue-400 p-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
+                  />
+                </svg>
+
+                <div className="m-2">
+                  <p className="text-white font-semibold">Wi-Fi</p>
+                  <p className="text-gray-300">Man</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-red-400 flex flex-col flex-1 m-1 flex-grow">
+          Now
+        </div>
       </Popover.Content>
     </Popover>
   );
