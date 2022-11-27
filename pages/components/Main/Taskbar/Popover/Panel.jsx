@@ -88,7 +88,7 @@ function Panel() {
               </div>
             </div>
             <div>
-              {/*  */}
+              {/* okay */}
               <div>
                 <p>Bluetooth</p>
                 <p>On</p>
