@@ -87,7 +87,13 @@ function Panel() {
                 <p>A Man Wifi</p>
               </div>
             </div>
-            <div>bluetooth</div>
+            <div>
+              {/*  */}
+              <div>
+                <p>Bluetooth</p>
+                <p>A Man Wifi</p>
+              </div>
+            </div>
           </div>
         </div>
         <div>Brightness</div>
