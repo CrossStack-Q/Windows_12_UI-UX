@@ -74,10 +74,9 @@ function Panel() {
                   d="M21 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <p className="absolute text-white">
-                63%
-              </p>
+              <p className="absolute text-white">63%</p>
             </div>
+            <p className="text-white">A Man Laptop</p>
           </div>
           <div className="flex flex-col flex-[0.5] ">
             <div>wifi</div>
