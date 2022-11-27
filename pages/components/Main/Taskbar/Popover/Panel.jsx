@@ -80,7 +80,13 @@ function Panel() {
             <p>Available Time:4 hours</p>
           </div>
           <div className="flex flex-col flex-[0.5] ">
-            <div>wifi</div>
+            <div>
+              {/*  */}
+              <div>
+                <p>Wi-Fi</p>
+                <p>A Man Wifi</p>
+              </div>
+            </div>
             <div>bluetooth</div>
           </div>
         </div>
