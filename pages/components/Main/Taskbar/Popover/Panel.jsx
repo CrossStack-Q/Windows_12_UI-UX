@@ -77,6 +77,7 @@ function Panel() {
               <p className="absolute text-white">63%</p>
             </div>
             <p className="text-white">A Man Laptop</p>
+            <p>Available Time:4 hours</p>
           </div>
           <div className="flex flex-col flex-[0.5] ">
             <div>wifi</div>
