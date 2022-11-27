@@ -91,8 +91,9 @@ function Panel() {
               {/*  */}
               <div>
                 <p>Bluetooth</p>
-                <p>A Man Wifi</p>
+                <p>On</p>
               </div>
+              {/* arroe */}
             </div>
           </div>
         </div>
