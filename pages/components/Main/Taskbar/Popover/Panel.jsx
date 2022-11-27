@@ -81,7 +81,7 @@ function Panel() {
           </div>
           <div className="flex flex-col flex-[0.5] ">
             <div>
-              {/*  */}
+              {/* wifi */}
               <div>
                 <p>Wi-Fi</p>
                 <p>A Man Wifi</p>
