@@ -1,7 +1,7 @@
 import React from "react";
 // import CALCULATOR_BUTTONS from "./CalculatorButtons";
 
-const Buttons = ({ inputHandler, clearInput, backspace, changePlusMinus, calculateAns }) => {
+const Butto = ({ inputHandler, clearInput, backspace, changePlusMinus, calculateAns }) => {
   document.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -102,4 +102,4 @@ const Buttons = ({ inputHandler, clearInput, backspace, changePlusMinus, calcula
   );
 };
 
-export default Buttons;
+export default Butto;
