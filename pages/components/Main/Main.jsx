@@ -10,6 +10,9 @@ import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 import { useAppContext } from "../../../context/state";
 import Browser from "./Browser/Browser";
+import File from "./FileEx/File"
+
+import Calculator from "./Calculator/Calculator"
 
 
 
@@ -48,6 +51,8 @@ function Main() {
       <main className="flex-1 w-full flex justify-center flex-col items-center">
         <Search/>
         <Browser/>
+        <File/>
+        <Calculator/>
       </main>
       {/* .
       ..

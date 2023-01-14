@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/music.jsx", "pages/components/Main/Taskbar/Popover/Menu.jsx", "pages/components/Main/Browser/Browser.jsx", "pages/components/Main/Search/Search.jsx", "pages/components/Main.jsx"],
   "exclude": ["node_modules"]
 }

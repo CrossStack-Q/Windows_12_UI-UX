@@ -10,13 +10,16 @@ export function AppWrapper({ children }) {
     
 
     const [search, setSearch] = useState("hidden");
+    const [panel, setPanel] = useState("panel");
     
     const [showBrowser, setShowBrowser] = useState("hidden");
+    
+    const [showFileEx, setShowFileEx] = useState("hidden");
+  
+    const [showCalculator, setShowCalculator] = useState("hidden");
   
 
-  
-
-  const value = { search, setSearch,showBrowser, setShowBrowser };
+  const value = { search, setSearch,showBrowser, setShowBrowser , panel, setPanel , showFileEx, setShowFileEx , showCalculator, setShowCalculator };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }

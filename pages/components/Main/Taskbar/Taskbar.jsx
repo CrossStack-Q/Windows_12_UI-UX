@@ -15,6 +15,9 @@ import Menu from "./Popover/Menu";
 import Panel from "./Popover/Panel";
 import battery1 from "../../../../public/bat.png";
 import wifi1 from "../../../../public/wif.png";
+import folder from "../../../../public/folder.png"
+import calculator from "../../../../public/calculator.png"
+
 
 function Taskbar() {
   const date = new Date();
@@ -104,7 +107,8 @@ function Taskbar() {
     apm = "AM";
   }
 
-  const { showBrowser, setShowBrowser, search, setSearch } = useAppContext();
+  const { showBrowser, setShowBrowser, search, setSearch , showFileEx, setShowFileEx, showCalculator, setShowCalculator } = useAppContext();
+  
   return (
     <footer className="bg-zinc-900 w-[98vw] m-2 px-1 h-10 rounded-md py-2 flex justify-between items-center">
       <div className="flex gap-2 items-center">
@@ -120,6 +124,7 @@ function Taskbar() {
         <div className="w-8 h-8 hover:w-9 hover:h-9">
           <Image alt="word" src={word} objectFit="cover" />
         </div>
+
         <div
           onClick={() => {
             if (showBrowser == "hidden") {
@@ -135,6 +140,30 @@ function Taskbar() {
         <div className="w-8 h-8 hover:w-9 hover:h-9">
           <Image alt="firefox" src={firefox} objectFit="cover" />
         </div>
+        <div
+        onClick={() => {
+          if (showFileEx == "hidden") {
+            setShowFileEx("show");
+          } else {
+            setShowFileEx("hidden");
+          }
+        }}
+        className="w-8 h-8 hover:w-9 hover:h-9">
+          <Image alt="folder" src={folder} objectFit="cover" />
+        </div>
+
+        <div
+        onClick={() => {
+          if (showFileEx == "hidden") {
+            setShowCalculator("show");
+          } else {
+            setShowCalculator("hidden");
+          }
+        }}
+        className="w-8 h-8 hover:w-9 hover:h-9">
+          <Image alt="folder" src={calculator} objectFit="cover" />
+        </div>
+        
       </div>
       <div className="flex gap-2 items-center">
         <div>
@@ -165,7 +194,7 @@ function Taskbar() {
             />
           </svg>
         </div>
-        <Panel/>
+        <Panel />
         <div className="text-white text-lg">
           &nbsp;{day.slice(0, 3)},{date.getDate()}&nbsp;{month}&nbsp;
         </div>

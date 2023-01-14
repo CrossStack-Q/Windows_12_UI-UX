@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
           <main className=" flex w-full flex-1 flex-col h-full items-center justify-center px-20 text-center">
             <div className="w-20 h-20">
-              <Image src={terminal} objectFit="cover" />
+              <Image src={terminal} object-fit= "cover" alt="none" />
             </div>
           </main>
           <footer className="h-[10vh]" onClick={() => signIn()}>

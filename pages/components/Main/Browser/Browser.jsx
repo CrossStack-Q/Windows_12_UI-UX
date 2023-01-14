@@ -7,7 +7,7 @@ function Browser() {
 
   const {showBrowser, setShowBrowser} = useAppContext();
   return (
-    <div className={`bg-white ${showBrowser} flex flex-col items-center w-[60vw] h-[60vh]`}>
+    <div className={`bg-white absolute ${showBrowser} flex flex-col items-center w-[60vw] h-[60vh]`}>
       <header className=" justify-between w-full bg-zinc-800 flex text-lg p-2">
         <div className=" gap-1 -ml-1 flex items-center">
           <div className="w-6 h-6">

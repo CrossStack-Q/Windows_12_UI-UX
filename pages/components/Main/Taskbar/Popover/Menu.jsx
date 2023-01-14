@@ -54,7 +54,7 @@ function Menu() {
                   </div>
                 </div>
 
-                <div className="flex justify-evenly gap-2 pt-6 pb-2 px-8">
+                <div className="flex justify-evenly gap-5 pt-6 pb-2 px-8">
                   <button className="text-white flex items-center font-semibold">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +168,7 @@ function Menu() {
                     </div>
                   </div>
                   <p className="text-gray-200 mt-4">All Apps</p>
-                  <div className="overflow-y-scroll h-[17vh] mb-6">
+                  <div className="overflow-scroll hidescrool h-[17vh] mb-6">
                     <div className="flex gap-4 mt-2 mb-2 justify-between">
                       <div className="w-12 h-12 m-2 flex flex-col items-center  hover:bg-zinc-700 rounded-md p-1">
                         <Image alt="excel" src={excel} objectFit="cover" />
