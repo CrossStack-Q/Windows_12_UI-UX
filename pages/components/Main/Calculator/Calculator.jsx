@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Display from "./Display";
-import Buttons from "./Buttons";
+import Butto from "./Butto";
 import { evaluate, round } from "mathjs";
 
 import { useAppContext } from "../../../../context/state";
@@ -137,7 +137,7 @@ function Calculator() {
         <div className={`main ${showCalculator} absolute`}>
           
           <Display input={input} setInput={setInput} answer={answer} />
-          <Buttons
+          <Butto
             inputHandler={inputHandler}
             clearInput={clearInput}
             backspace={backspace}
