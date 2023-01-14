@@ -146,3 +146,12 @@ const Display = ({ input, setInput, answer }) => {
 };
 
 export default Display;
+
+
+export async function getStaticProps({ params }) {
+  return {
+      props: {
+        input, setInput, answer
+      }
+  }
+}

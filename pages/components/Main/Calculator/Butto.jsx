@@ -107,3 +107,22 @@ const Butto = ({ inputHandler, clearInput, backspace, changePlusMinus, calculate
 };
 
 export default Butto;
+
+
+
+// export async function getStaticPaths() {
+//   const paths = await getAllPostIds();
+//   return {
+//       paths,
+//       fallback: false
+//   }
+// }
+
+export async function getStaticProps({ params }) {
+  return {
+      props: {
+          inputHandler,
+          clearInput, backspace, changePlusMinus, calculateAns
+      }
+  }
+}
