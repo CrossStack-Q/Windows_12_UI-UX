@@ -2,6 +2,8 @@ import React from "react";
 
 import { useAppContext } from "../../../../context/state";
 
+import styles from "../../../../styles/calcli.module.css"
+
 const Display = ({ input, setInput, answer }) => {
 
 
@@ -17,7 +19,7 @@ const Display = ({ input, setInput, answer }) => {
 
   return (
     <main>
-      <div className="display">
+      <div className={styles.display}>
         
         {answer === "" ? (
           
@@ -66,7 +68,7 @@ const Display = ({ input, setInput, answer }) => {
             <input
               type="text"
               name="input"
-              className="input"
+              className={styles.input}
               style={{ padding: "29px" }}
               value={input}
               placeholder="0"
@@ -121,7 +123,7 @@ const Display = ({ input, setInput, answer }) => {
             <input
               type="text"
               name="input"
-              className="value"
+              className={styles.value}
               value={input}
               placeholder="0"
               maxLength={12}
@@ -131,7 +133,7 @@ const Display = ({ input, setInput, answer }) => {
             <input
               type="text"
               name="value"
-              className="input"
+              className={styles.input}
               value={answer}
               disabled
             />

@@ -3,6 +3,9 @@ import Display from "./Display";
 import Butto from "./Butto";
 import { evaluate, round } from "mathjs";
 
+import styles from "../../../../styles/calcli.module.css"
+
+
 import { useAppContext } from "../../../../context/state";
 
 function Calculator() {
