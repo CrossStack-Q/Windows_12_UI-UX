@@ -12,8 +12,8 @@ import { useAppContext } from "../../../context/state";
 import Browser from "./Browser/Browser";
 import File from "./FileEx/File"
 
-import Calculator from "./Calculator/Calculator"
 
+import Music from "./MusicPlayer/Music"
 
 
 function Main() {
@@ -52,7 +52,7 @@ function Main() {
         <Search/>
         <Browser/>
         <File/>
-        <Calculator/>
+        {/* <Calculator/> */}
       </main>
       {/* .
       ..

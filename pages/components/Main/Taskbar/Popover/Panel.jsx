@@ -11,6 +11,7 @@ import {
 import { useAppContext } from "../../../../../context/state";
 import Image from "next/image";
 import excel from "../../../../../public/excel.png";
+import Music from "../../MusicPlayer/Music";
 
 function Panel() {
   const { showBrowser, setShowBrowser, search, setSearch, panel, setPanel } =
@@ -59,7 +60,7 @@ function Panel() {
             display: "flex",
             flexDirection: "column",
             maxWidth: "30vw",
-            height: "49vh",
+            height: "full",
             outline: "none",
             padding: "$6",
             overflow: "hidden",
@@ -108,7 +109,7 @@ function Panel() {
 
                 <div className="m-1">
                   <p className="text-white font-semibold">Wi-Fi</p>
-                  <p className="text-gray-300">Man</p>
+                  <p className="text-gray-300">ON</p>
                 </div>
               </div>
               <div className="flex items-center justify-between p-2 m-1 bg-white bg-opacity-5 rounded-lg">
@@ -163,48 +164,28 @@ function Panel() {
           <div className="flex">
             <div className="flex-[0.5]">
               <div className="flex items-center p-1 m-1 bg-opacity-5 bg-white rounded-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-8 h-8 m-2 rounded-full text-white bg-blue-400 p-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9 bg-blue-400 rounded-full text-white p-1">
+                  <path fill-rule="evenodd" d="M5.636 4.575a.75.75 0 010 1.06 9 9 0 000 12.729.75.75 0 01-1.06 1.06c-4.101-4.1-4.101-10.748 0-14.849a.75.75 0 011.06 0zm12.728 0a.75.75 0 011.06 0c4.101 4.1 4.101 10.749 0 14.85a.75.75 0 11-1.06-1.061 9 9 0 000-12.728.75.75 0 010-1.06zM7.757 6.696a.75.75 0 010 1.061 6 6 0 000 8.485.75.75 0 01-1.06 1.061 7.5 7.5 0 010-10.607.75.75 0 011.06 0zm8.486 0a.75.75 0 011.06 0 7.5 7.5 0 010 10.607.75.75 0 01-1.06-1.06 6 6 0 000-8.486.75.75 0 010-1.06zM9.879 8.818a.75.75 0 010 1.06 3 3 0 000 4.243.75.75 0 11-1.061 1.06 4.5 4.5 0 010-6.363.75.75 0 011.06 0zm4.242 0a.75.75 0 011.061 0 4.5 4.5 0 010 6.364.75.75 0 01-1.06-1.06 3 3 0 000-4.244.75.75 0 010-1.06zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
                 </svg>
 
+
                 <div className="m-2">
-                  <p className="text-white font-semibold">Wi-Fi</p>
-                  <p className="text-gray-300">Man</p>
+                  <p className="text-white font-semibold">Hotspot</p>
+                  <p className="text-gray-300">OFF</p>
                 </div>
               </div>
             </div>
             <div className="flex-[0.5]">
               <div className="flex-[0.5]">
                 <div className="flex items-center p-1 m-1 bg-opacity-5 bg-white rounded-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-8 h-8 m-2 rounded-full text-white bg-blue-400 p-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9 bg-blue-400 rounded-full text-white p-1">
+                    <path d="M6 12a.75.75 0 01-.75-.75v-7.5a.75.75 0 111.5 0v7.5A.75.75 0 016 12zM18 12a.75.75 0 01-.75-.75v-7.5a.75.75 0 011.5 0v7.5A.75.75 0 0118 12zM6.75 20.25v-1.5a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0zM18.75 18.75v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 011.5 0zM12.75 5.25v-1.5a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0zM12 21a.75.75 0 01-.75-.75v-7.5a.75.75 0 011.5 0v7.5A.75.75 0 0112 21zM3.75 15a2.25 2.25 0 104.5 0 2.25 2.25 0 00-4.5 0zM12 11.25a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zM15.75 15a2.25 2.25 0 104.5 0 2.25 2.25 0 00-4.5 0z" />
                   </svg>
 
+
                   <div className="m-2">
-                    <p className="text-white font-semibold">Wi-Fi</p>
-                    <p className="text-gray-300">Man</p>
+                    <p className="text-white font-semibold">Admin</p>
+                    <p className="text-gray-300">Go</p>
                   </div>
                 </div>
               </div>
@@ -212,42 +193,17 @@ function Panel() {
           </div>
           <div className="text-white bg-white bg-opacity-5 rounded-lg flex m-1 p-2 gap-2 items-center">
             <Avatar
-              src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+              src="https://raw.githubusercontent.com/Cross-Rehk/Some_Extra_files/main/dp/Screenshot%20from%202023-01-15%2019-06-59.png"
               size="lg"
+              zoomed
             />
             <div className="flex flex-col mx-2">
-              <span>Name of song</span>
-              <span>Singer name</span>
+              <span className="text-lg font-semibold" >Shauq</span>
+              <span className="text-base font-semibold" >Qala</span>
             </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6 ml-4"
-            >
-              <path d="M9.195 18.44c1.25.713 2.805-.19 2.805-1.629v-2.34l6.945 3.968c1.25.714 2.805-.188 2.805-1.628V8.688c0-1.44-1.555-2.342-2.805-1.628L12 11.03v-2.34c0-1.44-1.555-2.343-2.805-1.629l-7.108 4.062c-1.26.72-1.26 2.536 0 3.256l7.108 4.061z" />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                clip-rule="evenodd"
-              />
-            </svg>
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6"
-            >
-              <path d="M5.055 7.06c-1.25-.714-2.805.189-2.805 1.628v8.123c0 1.44 1.555 2.342 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.342 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256L14.805 7.06C13.555 6.346 12 7.25 12 8.688v2.34L5.055 7.06z" />
-            </svg>
+
+            <Music />
           </div>
         </Popover.Content>
       ) : (
@@ -271,7 +227,7 @@ function Panel() {
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 className="w-5 h-5"
-                onClick={()=>{
+                onClick={() => {
                   setPanel("panel")
                 }}
               >
