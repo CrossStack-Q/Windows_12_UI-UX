@@ -17,10 +17,12 @@ import battery1 from "../../../../public/bat.png";
 import wifi1 from "../../../../public/wif.png";
 import folder from "../../../../public/folder.png"
 import calculator from "../../../../public/calculator.png"
-
+import { signIn, signOut, useSession } from "next-auth/react";
 
 function Taskbar() {
   const date = new Date();
+
+  const { data: session } = useSession();
 
   var month;
 
@@ -243,7 +245,7 @@ function Taskbar() {
               }}
             >
               <div className="flex flex-col gap-2">
-                <button className="bg-white bg-opacity-10 text-white text-base font-bold px-4 py-1 rounded-md">
+                <button onClick={() => signOut()} className="bg-white bg-opacity-10 text-white text-base font-bold px-4 py-1 rounded-md">
                   Logout
                 </button>
                 <button className="bg-white bg-opacity-10 text-white text-base font-bold px-4 py-1 rounded-md">

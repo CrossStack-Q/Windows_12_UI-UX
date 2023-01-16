@@ -12,7 +12,7 @@ function MainThing() {
                 arrows
             </div>
             <Dropdown>
-              <Dropdown.Button flat>Trigger</Dropdown.Button>
+              <Dropdown.Button flat>Edit</Dropdown.Button>
               <Dropdown.Menu aria-label="Static Actions">
                 <Dropdown.Item key="new">New file</Dropdown.Item>
                 <Dropdown.Item key="copy">Copy link</Dropdown.Item>
